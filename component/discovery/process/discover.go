@@ -126,7 +126,6 @@ func Discover(l log.Logger, cfg *DiscoverConfig, cache *analCache.Cache) ([]Proc
 			username, err = p.Username()
 			if err != nil {
 				loge(int(p.Pid), err)
-				continue
 			}
 		}
 		if cfg.UID {
